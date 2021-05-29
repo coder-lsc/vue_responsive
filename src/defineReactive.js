@@ -1,7 +1,6 @@
 import observe from './observe'
 
 export default function defineReactive(data, key, val) {
-  console.log('我是defineReactive', key);
   if(arguments.length == 2) {
     val = data[key]
   }

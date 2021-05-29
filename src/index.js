@@ -8,11 +8,13 @@ var obj = {
       n: 5
     }
   },
-  b: 10
+  b: [10, 20]
 }
 
 
 
 observe(obj)
 obj.a.m.n++
-obj.b++
+obj.b.push(30, 40)
+console.log(obj.b.pop());
+obj.b.splice(2,1,[88,99])
