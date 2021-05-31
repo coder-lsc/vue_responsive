@@ -1,5 +1,5 @@
 
-
+import Watcher from './Watcher'
 import observe from './observe'
 
 var obj = {
@@ -14,7 +14,7 @@ var obj = {
 
 
 observe(obj)
+new Watcher(obj, 'a.m.n', (val) => {
+  console.log('-----aaaaaaa-----', val);
+})
 obj.a.m.n++
-obj.b.push(30, 40)
-console.log(obj.b.pop());
-obj.b.splice(2,1,[88,99])
